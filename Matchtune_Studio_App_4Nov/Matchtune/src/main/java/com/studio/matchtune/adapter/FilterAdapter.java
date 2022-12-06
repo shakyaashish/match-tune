@@ -28,7 +28,7 @@ public class FilterAdapter extends ArrayAdapter<String> {
 
     public FilterAdapter(Context context, ArrayList<String> users, String categories) {
         super(context, 0, users);
-         //  changes
+         //  changes done
         Log.d("testcat",""+users.get(0).toString());
     }
 

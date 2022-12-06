@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="@color/black">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frmSettingBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/gray_001"
+        android:visibility="invisible">
+
+    </FrameLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-15dp"
+        android:layout_marginRight="-10dp"
+        android:tint="@android:color/white"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="-6dp"
+        fab:menu_colorNormal="@android:color/transparent"
+        fab:menu_colorPressed="@android:color/transparent"
+        fab:menu_colorRipple="@color/black"
+        fab:menu_fab_label=""
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/settingico"
+        fab:menu_labels_colorNormal="#000000"
+        fab:menu_labels_colorPressed="#000000"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="5dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="-16dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="5dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="@color/floating_bg"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_openDirection="down"
+        fab:menu_shadowColor="#00444444"
+        fab:menu_shadowRadius="4dp"
+        app:backgroundTint="@android:color/transparent"
+        app:borderWidth="0dp"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="0dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/about_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="About this app"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/loating_action_menu_matchTune_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/locck"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="MatchTune User Login"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/loating_action_menu_matchTune_Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_lock_open_24"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="MatchTune User Login"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_action_menu_matchTune_AppCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_supervisor_account_24"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="App credits"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/loating_action_menu_resetapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settingicob"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="Preferences"
+            fab:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_action_menu_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imageclouds"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="Privacy policy"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/loating_action_menu_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/docs"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="Terms of use"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floating_action_menu_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="Contact Us"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/action_menu_rate_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbup"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="Rate this app"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menuWatchTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/watchs"
+            fab:fab_colorNormal="@color/floating_bg"
+            fab:fab_colorPressed="@color/floating_bg"
+            fab:fab_label="Watch the tutorial"
+            fab:fab_size="mini" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_small" />
+
+    <com.ramotion.circlemenu.CircleMenuView
+        android:id="@+id/circle_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="30dp"
+        app:button_colors="@array/colors"
+        app:button_icons="@array/icons"
+        app:distance="125dp"
+        app:duration_ring="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loader"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/loaderbig"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtNoInterNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loader"
+        android:layout_centerHorizontal="true"
+        android:text="This app requires an Internet access.\n Please check your connection and we'll get going."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/add" />
+    <TextView
+        android:id="@+id/txtSelectVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:text="Tap here to select a video"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="You tell the story,\nWe set the tone."
+        android:textAlignment="center"
+        android:textColor="#E3BB76"
+        android:textSize="35dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 2.5 (Build 56) "
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/txtUserlogged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logfffggdg"
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_popup">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/txtStudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Volume control"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/arrowcircle"
+            app:layout_constraintHorizontal_bias="0.584"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/arrowcircle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            android:src="@drawable/xmark_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/quickmode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+
+        android:text="Adapt original soundtrack volume to your preference here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:contentDescription="shoaib"
+            android:value="20.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:trackHeight="4dp"
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@drawable/thumb"
+            android:minHeight="4dp"
+            android:maxHeight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/sound"
+            android:text="20%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:text="Adapt music volume to your preference here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:contentDescription="shoaib"
+        android:value="20.0"
+        android:valueFrom="0.0"
+        android:valueTo="100.0"
+        app:thumbColor="#2DE3BE"
+
+        android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/sound2"
+            android:text="20%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/soundbar"
+            android:text=""
+            android:background="#2DE3BE"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/volumebar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FF6C5204"
+            android:padding="10dp"
+            android:text=""
+
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/advancemode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Click Record and we will learn how you change volume dynamically along the whole video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+
+                android:scaleType="centerCrop"
+                android:tintMode="src_over"
+                android:src="@drawable/soundbtnrec"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startrecording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="8"
+        android:layout_marginTop="20dp"
+        android:gravity="top">
+
+
+
+        <ImageView
+            android:id="@+id/deleteicons"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:visibility="invisible"
+
+            android:src="@drawable/deleteicon"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1"
+            tools:layout_editor_absoluteY="2dp" />
+        <TextView
+            android:id="@+id/btnstartrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="70dp"
+            android:gravity="center"
+            android:text="START RECORDING"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+
+            tools:layout_editor_absoluteX="149dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="8"
+        android:layout_marginTop="10dp"
+        android:gravity="top">
+
+
+
+        <ImageView
+            android:id="@+id/deleteicon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:src="@drawable/deleteicon"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1"
+            tools:layout_editor_absoluteY="2dp" />
+        <TextView
+            android:id="@+id/btnadvance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="70dp"
+            android:gravity="center"
+            android:text="ADVANCED MODE"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+
+            tools:layout_editor_absoluteX="149dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

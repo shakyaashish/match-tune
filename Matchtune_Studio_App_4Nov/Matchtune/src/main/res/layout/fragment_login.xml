@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_popup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+        <TextView
+            android:id="@+id/txtStudio"
+            android:text="Studio User Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/arrowcircle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/xmark_circle" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/soundtrack"
+        android:text="If you have an existing account with MatchTune for Studio, please enter your credentials here in order to get full benefits and features unlocked."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/groupradsio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/edit_text_border"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            android:hint="Your Username here"
+            android:textColorHint="@color/hinttext"
+            app:hintTextColor="#FF9800"
+            android:background="@drawable/edittext_noborder"
+            android:textColor="@color/gray"
+            app:boxStrokeColor="#FF9800">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext_noborder"
+                android:layout_height="50dp"
+                android:textSize="19dp"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/removeuser"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/removeicon" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/grouprfadsio"
+        android:layout_marginLeft="5dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/edit_text_border"
+        android:layout_height="55dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0"
+            app:hintTextColor="#FF9800"
+            android:hint="Your Password here"
+            android:textColorHint="@color/hinttext"
+            android:background="@drawable/edittext_noborder"
+            android:textColor="@color/gray_001"
+            app:boxStrokeColor="@color/gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext_noborder"
+                android:layout_height="50dp"
+                android:textSize="19dp"
+                android:padding="2dp"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <ImageView
+            android:id="@+id/removepwd"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/removeicon" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/groupradio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:button="@drawable/checkbox_button"
+            android:checked="true"
+
+            android:text="    Remember me on this device"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/groupradiokeep"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/keepsignin"
+        android:text="     Keep me signed in on startup"
+        android:textSize="12dp"
+        android:button="@drawable/checkbox_button"
+        android:checked="true"
+        android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="LOG ME IN"
+        android:id="@+id/submit"
+        android:textSize="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_popuplog"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loaderlogin"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/musicloader" />
+    <TextView
+        android:id="@+id/loginmsg"
+        android:text="Login in to MatchTune Service \n One moment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+</LinearLayout>

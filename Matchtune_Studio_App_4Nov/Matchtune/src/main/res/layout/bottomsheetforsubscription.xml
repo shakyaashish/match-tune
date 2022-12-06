@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/sheet"
+
+    android:background="@drawable/bg_bottomsheet_dialog">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Play Store"/>
+
+            <TextView
+                android:id="@+id/cancelbottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Cancel"
+                android:textSize="17dp"
+                android:textColor="@color/blue_001"
+
+               />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#16000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRetailer"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:visibility="gone"
+            android:paddingBottom="6dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Retailer"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDistribution"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:visibility="gone"
+            android:paddingBottom="6dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Distributor"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMasterDistri"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:visibility="gone"
+            android:paddingLeft="19dp"
+
+            android:paddingRight="19dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Master Distributor"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViews4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="5dp"
+            app:cardElevation="5dp"
+            android:visibility="visible"
+
+
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recorderbottoms"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_ordershifpping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+
+                android:padding="15dp"
+                android:layout_marginRight="20dp"
+                android:text="ACCOUNT"
+
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txt_ordershipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+
+                android:padding="15dp"
+                android:layout_marginRight="20dp"
+                android:text="amit@gmail.com"
+
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_ordershifdpping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+
+                android:padding="15dp"
+                android:layout_marginRight="20dp"
+                android:text="PRICE"
+
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txt_ordersERhipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+
+                android:padding="15dp"
+                android:layout_marginRight="20dp"
+                android:text="₹ 489 per month"
+
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/finalsubscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Subscribe "
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:background="@drawable/gradient_final_subscribe"
+                android:textColor="@color/white"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        >
+
+        <TextView
+            android:id="@+id/txtStudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Video type"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/soundtrack"
+        android:text="Tell us what our video is about and we'll find the best music for you."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+
+
+       />
+
+    <TextView
+        android:text="This supersedes video contents criterias."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:paddingBottom="5dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:gravity="top">
+
+
+
+
+            <ListView
+                android:id="@+id/filterList"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                tools:layout_editor_absoluteX="0dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                tools:layout_editor_absoluteY="105dp">
+
+
+            </ListView>
+
+            <ImageView
+                android:id="@+id/imagefront"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:src="@drawable/bg_recyclerview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imagefronts"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:src="@drawable/bg_recyclerbottom"
+                app:layout_constraintBottom_toBottomOf="@+id/filterList"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

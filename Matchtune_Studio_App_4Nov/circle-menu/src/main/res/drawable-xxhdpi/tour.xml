@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="rectangle">
+        <corners android:radius="44dp" />
+        <solid android:color="#4C88F7" />
+        <size
+            android:width="44dp"
+            android:height="44dp" />
+        <stroke
+            android:width="2dp"
+            android:color="#ffffff"
+            />
+    </shape>
+
+
+</item>
+<item>
+    <layer-list>
+        <item android:drawable="@drawable/ic_tour" android:gravity="center"/>
+    </layer-list>
+</item>
+</layer-list>

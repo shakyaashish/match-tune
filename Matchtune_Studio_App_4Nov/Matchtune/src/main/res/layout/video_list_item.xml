@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="0dp">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mainlayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_bg"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="false"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/camera"
+
+                    android:tintMode="src_over" />
+
+                <ImageView
+                    android:id="@+id/imageFav"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@id/item_image"
+                    android:layout_alignRight="@id/item_image"
+                    android:adjustViewBounds="true"
+                    android:padding="2dp"
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/heart"
+                    android:tintMode="src_over" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/musicloder"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+
+                    android:layout_alignParentTop="true"
+
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:src="@drawable/musicprosm" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/horizontalloder"
+                    android:layout_width="60dp"
+                    android:layout_height="10dp"
+                    android:visibility="gone"
+                    android:layout_alignBottom="@+id/musicloder"
+
+                    android:layout_alignParentTop="true"
+
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="52dp"
+                    android:layout_marginBottom="-9dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/horizontalprogress" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="1dp">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_image"
+                android:padding="1dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10dp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</RelativeLayout>
